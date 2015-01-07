@@ -3,7 +3,7 @@ open SAUActor
 open MonoGameUtilities
 open Microsoft.Xna.Framework
 open Microsoft.Xna.Framework.Graphics
- 
+open Microsoft.Xna.Framework.Media
 type Game1 () as x =
     inherit Game()
  
@@ -29,6 +29,9 @@ type Game1 () as x =
                          |> List.sortBy (fun (_, _, v, _) -> v.Y + 0.0001f * v.X)
                          |> List.map CreateActor')
                          
+    let mutable font = Unchecked.defaultof<SpriteFont>
+    let mutable frameRate = 0.0
+    let mutable frameCounter = 0.0
 
     let DrawActor (sb:SpriteBatch) actor =
         if actor.Texture.IsSome then
@@ -51,15 +54,21 @@ type Game1 () as x =
         camera.CenterOn(Cell(mapSize/2.f, mapSize/2.f))
         do WorldObjects.Force () |> ignore
         do MobileObjects.Force () |> ignore
+        do font <- x.Content.Load("Zodiac")
         ()
  
     override x.Update (gameTime) =
+        if (frameCounter > 0.0 && gameTime.ElapsedGameTime.TotalSeconds > 0.0) then
+            do frameRate <- frameCounter / gameTime.ElapsedGameTime.TotalSeconds
+            do frameCounter <- 0.0
         ()
  
     override x.Draw (gameTime) =
+        do frameCounter <- frameCounter + 1.0;
         do x.GraphicsDevice.Clear Color.CornflowerBlue
         let DrawActor' = DrawActor spriteBatch
         do spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null, null, camera.TranslationMatrix)
         WorldObjects.Value @ MobileObjects.Value |> List.iter DrawActor'
+        do spriteBatch.DrawString(font, (string (int frameRate)), (camera.Position), Color.OrangeRed)
         do spriteBatch.End ()
         ()
