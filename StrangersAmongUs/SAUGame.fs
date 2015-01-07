@@ -1,5 +1,6 @@
 ﻿module SAUGame
 open SAUActor
+open MonoGameUtilities
 open Microsoft.Xna.Framework
 open Microsoft.Xna.Framework.Graphics
  
@@ -9,13 +10,25 @@ type Game1 () as x =
     do x.Content.RootDirectory <- "Content"
     let graphics = new GraphicsDeviceManager(x)
     let mutable spriteBatch = Unchecked.defaultof<SpriteBatch>
- 
+    let mapSize = 30.f
+    let camera = new Camera()
     let CreateActor' = CreateActor x.Content
-        
-    let WorldObjects = lazy ([("palette50/Terrain_Huge_face0_0.png", Terrain, Vector2(80.f,0.f), Vector2(168.f,208.f));
-                              ("palette0/Human_Male_Large_face0_0.png", Player(Nothing), Vector2(120.f,60.f), Vector2(88.f,108.f));
-                              ("", Terrain, Vector2(42.f,60.f), Vector2(32.f,32.f));]
+    let R = new System.Random()
+    let RandomTerrain () =  List.nth ["palette50/Terrain_Huge_face0_0"; "palette51/Terrain_Huge_face0_0";] (R.Next 2)
+    let RandomCreature () =  List.nth ["palette0/Human_Male_Large_face0_0"; "palette0/Human_Female_Large_face0_0"; "palette20/Lomuk_Large_face0_0";] (R.Next 3)
+    let WorldObjects = lazy ([for x in 0.f .. mapSize do
+                                  for y in 0.f .. mapSize do
+                                      yield (RandomTerrain(), Terrain, Vector2(48.f * (x - y), 24.f * (x + y)), Vector2(168.f,208.f));]
+                         |> List.sortBy (fun (_, _, v, _) -> v.Y + 0.0001f * v.X)
                          |> List.map CreateActor')
+
+    let MobileObjects = lazy ([for x in 0.f .. mapSize do
+                                  for y in 0.f .. mapSize do
+                                      if R.Next(4) = 0 then
+                                          yield (RandomCreature(), Player(Nothing), Vector2(40.f + 48.f * (x - y), 60.f + 24.f * (x + y)), Vector2(88.f,108.f));]
+                         |> List.sortBy (fun (_, _, v, _) -> v.Y + 0.0001f * v.X)
+                         |> List.map CreateActor')
+                         
 
     let DrawActor (sb:SpriteBatch) actor =
         if actor.Texture.IsSome then
@@ -23,12 +36,21 @@ type Game1 () as x =
         ()
 
     override x.Initialize() =
+        do camera.ViewportWidth <- x.GraphicsDevice.Viewport.Width;
+        do camera.ViewportHeight <- x.GraphicsDevice.Viewport.Height;
+        do x.Window.AllowUserResizing <- true
+        do x.IsMouseVisible <- true
+        x.Window.ClientSizeChanged.Add(fun e -> do camera.ViewportWidth <- x.GraphicsDevice.Viewport.Width;
+                                                do camera.ViewportHeight <- x.GraphicsDevice.Viewport.Height;
+                                                camera.CenterOn(Cell(mapSize/2.f, mapSize/2.f)))
         do spriteBatch <- new SpriteBatch(x.GraphicsDevice)
         do base.Initialize()
         ()
  
     override x.LoadContent() =
+        camera.CenterOn(Cell(mapSize/2.f, mapSize/2.f))
         do WorldObjects.Force () |> ignore
+        do MobileObjects.Force () |> ignore
         ()
  
     override x.Update (gameTime) =
@@ -37,9 +59,7 @@ type Game1 () as x =
     override x.Draw (gameTime) =
         do x.GraphicsDevice.Clear Color.CornflowerBlue
         let DrawActor' = DrawActor spriteBatch
-        do spriteBatch.Begin ()
-        WorldObjects.Value
-        |> List.iter DrawActor'
+        do spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null, null, camera.TranslationMatrix)
+        WorldObjects.Value @ MobileObjects.Value |> List.iter DrawActor'
         do spriteBatch.End ()
         ()
-        

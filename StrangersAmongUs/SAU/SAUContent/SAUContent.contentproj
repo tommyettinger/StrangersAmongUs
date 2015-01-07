@@ -1,0 +1,947 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectGuid>{FA1216B2-8444-494B-99B9-450B882698CE}</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Windows</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SAUContentContent</RootNamespace>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Configuration)</OutputPath>
+    <ContentRootDirectory>Content</ContentRootDirectory>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Windows' ">
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Windows8' ">
+    <MonoGamePlatform>Windows8</MonoGamePlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Android' ">
+    <MonoGamePlatform>Android</MonoGamePlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'iOS' ">
+    <MonoGamePlatform>iOS</MonoGamePlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'OSX' ">
+    <MonoGamePlatform>OSX</MonoGamePlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Linux' ">
+    <MonoGamePlatform>Linux</MonoGamePlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'PSM' ">
+    <MonoGamePlatform>PSM</MonoGamePlatform>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.AudioImporters" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters" />
+    <Reference Include="MonoGameContentProcessors">
+      <HintPath>$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGameContentProcessors.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="palette0\Human_Female_Large_face0_0.png">
+      <Name>Human_Female_Large_face0_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Large_face0_1.png">
+      <Name>Human_Female_Large_face0_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Large_face0_2.png">
+      <Name>Human_Female_Large_face0_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Large_face0_3.png">
+      <Name>Human_Female_Large_face0_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Large_face1_0.png">
+      <Name>Human_Female_Large_face1_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Large_face1_1.png">
+      <Name>Human_Female_Large_face1_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Large_face1_2.png">
+      <Name>Human_Female_Large_face1_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Large_face1_3.png">
+      <Name>Human_Female_Large_face1_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Large_face2_0.png">
+      <Name>Human_Female_Large_face2_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Large_face2_1.png">
+      <Name>Human_Female_Large_face2_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Large_face2_2.png">
+      <Name>Human_Female_Large_face2_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Large_face2_3.png">
+      <Name>Human_Female_Large_face2_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Large_face3_0.png">
+      <Name>Human_Female_Large_face3_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Large_face3_1.png">
+      <Name>Human_Female_Large_face3_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Large_face3_2.png">
+      <Name>Human_Female_Large_face3_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Large_face3_3.png">
+      <Name>Human_Female_Large_face3_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face0_0.png">
+      <Name>Human_Female_Walk_Large_face0_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face0_1.png">
+      <Name>Human_Female_Walk_Large_face0_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face0_2.png">
+      <Name>Human_Female_Walk_Large_face0_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face0_3.png">
+      <Name>Human_Female_Walk_Large_face0_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face0_4.png">
+      <Name>Human_Female_Walk_Large_face0_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face0_5.png">
+      <Name>Human_Female_Walk_Large_face0_5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face0_6.png">
+      <Name>Human_Female_Walk_Large_face0_6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face0_7.png">
+      <Name>Human_Female_Walk_Large_face0_7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face1_0.png">
+      <Name>Human_Female_Walk_Large_face1_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face1_1.png">
+      <Name>Human_Female_Walk_Large_face1_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face1_2.png">
+      <Name>Human_Female_Walk_Large_face1_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face1_3.png">
+      <Name>Human_Female_Walk_Large_face1_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face1_4.png">
+      <Name>Human_Female_Walk_Large_face1_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face1_5.png">
+      <Name>Human_Female_Walk_Large_face1_5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face1_6.png">
+      <Name>Human_Female_Walk_Large_face1_6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face1_7.png">
+      <Name>Human_Female_Walk_Large_face1_7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face2_0.png">
+      <Name>Human_Female_Walk_Large_face2_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face2_1.png">
+      <Name>Human_Female_Walk_Large_face2_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face2_2.png">
+      <Name>Human_Female_Walk_Large_face2_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face2_3.png">
+      <Name>Human_Female_Walk_Large_face2_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face2_4.png">
+      <Name>Human_Female_Walk_Large_face2_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face2_5.png">
+      <Name>Human_Female_Walk_Large_face2_5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face2_6.png">
+      <Name>Human_Female_Walk_Large_face2_6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face2_7.png">
+      <Name>Human_Female_Walk_Large_face2_7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face3_0.png">
+      <Name>Human_Female_Walk_Large_face3_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face3_1.png">
+      <Name>Human_Female_Walk_Large_face3_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face3_2.png">
+      <Name>Human_Female_Walk_Large_face3_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face3_3.png">
+      <Name>Human_Female_Walk_Large_face3_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face3_4.png">
+      <Name>Human_Female_Walk_Large_face3_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face3_5.png">
+      <Name>Human_Female_Walk_Large_face3_5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face3_6.png">
+      <Name>Human_Female_Walk_Large_face3_6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Female_Walk_Large_face3_7.png">
+      <Name>Human_Female_Walk_Large_face3_7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Large_face0_0.png">
+      <Name>Human_Male_Large_face0_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Large_face0_1.png">
+      <Name>Human_Male_Large_face0_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Large_face0_2.png">
+      <Name>Human_Male_Large_face0_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Large_face0_3.png">
+      <Name>Human_Male_Large_face0_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Large_face1_0.png">
+      <Name>Human_Male_Large_face1_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Large_face1_1.png">
+      <Name>Human_Male_Large_face1_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Large_face1_2.png">
+      <Name>Human_Male_Large_face1_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Large_face1_3.png">
+      <Name>Human_Male_Large_face1_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Large_face2_0.png">
+      <Name>Human_Male_Large_face2_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Large_face2_1.png">
+      <Name>Human_Male_Large_face2_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Large_face2_2.png">
+      <Name>Human_Male_Large_face2_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Large_face2_3.png">
+      <Name>Human_Male_Large_face2_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Large_face3_0.png">
+      <Name>Human_Male_Large_face3_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Large_face3_1.png">
+      <Name>Human_Male_Large_face3_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Large_face3_2.png">
+      <Name>Human_Male_Large_face3_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Large_face3_3.png">
+      <Name>Human_Male_Large_face3_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face0_0.png">
+      <Name>Human_Male_Walk_Large_face0_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face0_1.png">
+      <Name>Human_Male_Walk_Large_face0_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face0_2.png">
+      <Name>Human_Male_Walk_Large_face0_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face0_3.png">
+      <Name>Human_Male_Walk_Large_face0_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face0_4.png">
+      <Name>Human_Male_Walk_Large_face0_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face0_5.png">
+      <Name>Human_Male_Walk_Large_face0_5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face0_6.png">
+      <Name>Human_Male_Walk_Large_face0_6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face0_7.png">
+      <Name>Human_Male_Walk_Large_face0_7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face1_0.png">
+      <Name>Human_Male_Walk_Large_face1_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face1_1.png">
+      <Name>Human_Male_Walk_Large_face1_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face1_2.png">
+      <Name>Human_Male_Walk_Large_face1_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face1_3.png">
+      <Name>Human_Male_Walk_Large_face1_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face1_4.png">
+      <Name>Human_Male_Walk_Large_face1_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face1_5.png">
+      <Name>Human_Male_Walk_Large_face1_5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face1_6.png">
+      <Name>Human_Male_Walk_Large_face1_6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face1_7.png">
+      <Name>Human_Male_Walk_Large_face1_7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face2_0.png">
+      <Name>Human_Male_Walk_Large_face2_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face2_1.png">
+      <Name>Human_Male_Walk_Large_face2_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face2_2.png">
+      <Name>Human_Male_Walk_Large_face2_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face2_3.png">
+      <Name>Human_Male_Walk_Large_face2_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face2_4.png">
+      <Name>Human_Male_Walk_Large_face2_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face2_5.png">
+      <Name>Human_Male_Walk_Large_face2_5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face2_6.png">
+      <Name>Human_Male_Walk_Large_face2_6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face2_7.png">
+      <Name>Human_Male_Walk_Large_face2_7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face3_0.png">
+      <Name>Human_Male_Walk_Large_face3_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face3_1.png">
+      <Name>Human_Male_Walk_Large_face3_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face3_2.png">
+      <Name>Human_Male_Walk_Large_face3_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face3_3.png">
+      <Name>Human_Male_Walk_Large_face3_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face3_4.png">
+      <Name>Human_Male_Walk_Large_face3_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face3_5.png">
+      <Name>Human_Male_Walk_Large_face3_5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face3_6.png">
+      <Name>Human_Male_Walk_Large_face3_6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette0\Human_Male_Walk_Large_face3_7.png">
+      <Name>Human_Male_Walk_Large_face3_7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="palette50\Terrain_Huge_face0_0.png">
+      <Name>Terrain_Huge_face0_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette50\Terrain_Huge_face0_1.png">
+      <Name>Terrain_Huge_face0_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette50\Terrain_Huge_face0_2.png">
+      <Name>Terrain_Huge_face0_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette50\Terrain_Huge_face0_3.png">
+      <Name>Terrain_Huge_face0_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette50\Terrain_Huge_face1_0.png">
+      <Name>Terrain_Huge_face1_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette50\Terrain_Huge_face1_1.png">
+      <Name>Terrain_Huge_face1_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette50\Terrain_Huge_face1_2.png">
+      <Name>Terrain_Huge_face1_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette50\Terrain_Huge_face1_3.png">
+      <Name>Terrain_Huge_face1_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette50\Terrain_Huge_face2_0.png">
+      <Name>Terrain_Huge_face2_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette50\Terrain_Huge_face2_1.png">
+      <Name>Terrain_Huge_face2_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette50\Terrain_Huge_face2_2.png">
+      <Name>Terrain_Huge_face2_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette50\Terrain_Huge_face2_3.png">
+      <Name>Terrain_Huge_face2_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette50\Terrain_Huge_face3_0.png">
+      <Name>Terrain_Huge_face3_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette50\Terrain_Huge_face3_1.png">
+      <Name>Terrain_Huge_face3_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette50\Terrain_Huge_face3_2.png">
+      <Name>Terrain_Huge_face3_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette50\Terrain_Huge_face3_3.png">
+      <Name>Terrain_Huge_face3_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="palette51\Terrain_Huge_face0_0.png">
+      <Name>Terrain_Huge_face0_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette51\Terrain_Huge_face0_1.png">
+      <Name>Terrain_Huge_face0_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette51\Terrain_Huge_face0_2.png">
+      <Name>Terrain_Huge_face0_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette51\Terrain_Huge_face0_3.png">
+      <Name>Terrain_Huge_face0_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette51\Terrain_Huge_face1_0.png">
+      <Name>Terrain_Huge_face1_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette51\Terrain_Huge_face1_1.png">
+      <Name>Terrain_Huge_face1_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette51\Terrain_Huge_face1_2.png">
+      <Name>Terrain_Huge_face1_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette51\Terrain_Huge_face1_3.png">
+      <Name>Terrain_Huge_face1_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette51\Terrain_Huge_face2_0.png">
+      <Name>Terrain_Huge_face2_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette51\Terrain_Huge_face2_1.png">
+      <Name>Terrain_Huge_face2_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette51\Terrain_Huge_face2_2.png">
+      <Name>Terrain_Huge_face2_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette51\Terrain_Huge_face2_3.png">
+      <Name>Terrain_Huge_face2_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette51\Terrain_Huge_face3_0.png">
+      <Name>Terrain_Huge_face3_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette51\Terrain_Huge_face3_1.png">
+      <Name>Terrain_Huge_face3_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette51\Terrain_Huge_face3_2.png">
+      <Name>Terrain_Huge_face3_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette51\Terrain_Huge_face3_3.png">
+      <Name>Terrain_Huge_face3_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="palette20\Lomuk_Large_face0_0.png">
+      <Name>Lomuk_Large_face0_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Large_face0_1.png">
+      <Name>Lomuk_Large_face0_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Large_face0_2.png">
+      <Name>Lomuk_Large_face0_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Large_face0_3.png">
+      <Name>Lomuk_Large_face0_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Large_face1_0.png">
+      <Name>Lomuk_Large_face1_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Large_face1_1.png">
+      <Name>Lomuk_Large_face1_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Large_face1_2.png">
+      <Name>Lomuk_Large_face1_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Large_face1_3.png">
+      <Name>Lomuk_Large_face1_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Large_face2_0.png">
+      <Name>Lomuk_Large_face2_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Large_face2_1.png">
+      <Name>Lomuk_Large_face2_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Large_face2_2.png">
+      <Name>Lomuk_Large_face2_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Large_face2_3.png">
+      <Name>Lomuk_Large_face2_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Large_face3_0.png">
+      <Name>Lomuk_Large_face3_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Large_face3_1.png">
+      <Name>Lomuk_Large_face3_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Large_face3_2.png">
+      <Name>Lomuk_Large_face3_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Large_face3_3.png">
+      <Name>Lomuk_Large_face3_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face0_0.png">
+      <Name>Lomuk_Walk_Large_face0_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face0_1.png">
+      <Name>Lomuk_Walk_Large_face0_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face0_2.png">
+      <Name>Lomuk_Walk_Large_face0_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face0_3.png">
+      <Name>Lomuk_Walk_Large_face0_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face0_4.png">
+      <Name>Lomuk_Walk_Large_face0_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face0_5.png">
+      <Name>Lomuk_Walk_Large_face0_5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face0_6.png">
+      <Name>Lomuk_Walk_Large_face0_6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face0_7.png">
+      <Name>Lomuk_Walk_Large_face0_7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face1_0.png">
+      <Name>Lomuk_Walk_Large_face1_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face1_1.png">
+      <Name>Lomuk_Walk_Large_face1_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face1_2.png">
+      <Name>Lomuk_Walk_Large_face1_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face1_3.png">
+      <Name>Lomuk_Walk_Large_face1_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face1_4.png">
+      <Name>Lomuk_Walk_Large_face1_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face1_5.png">
+      <Name>Lomuk_Walk_Large_face1_5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face1_6.png">
+      <Name>Lomuk_Walk_Large_face1_6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face1_7.png">
+      <Name>Lomuk_Walk_Large_face1_7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face2_0.png">
+      <Name>Lomuk_Walk_Large_face2_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face2_1.png">
+      <Name>Lomuk_Walk_Large_face2_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face2_2.png">
+      <Name>Lomuk_Walk_Large_face2_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face2_3.png">
+      <Name>Lomuk_Walk_Large_face2_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face2_4.png">
+      <Name>Lomuk_Walk_Large_face2_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face2_5.png">
+      <Name>Lomuk_Walk_Large_face2_5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face2_6.png">
+      <Name>Lomuk_Walk_Large_face2_6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face2_7.png">
+      <Name>Lomuk_Walk_Large_face2_7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face3_0.png">
+      <Name>Lomuk_Walk_Large_face3_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face3_1.png">
+      <Name>Lomuk_Walk_Large_face3_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face3_2.png">
+      <Name>Lomuk_Walk_Large_face3_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face3_3.png">
+      <Name>Lomuk_Walk_Large_face3_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face3_4.png">
+      <Name>Lomuk_Walk_Large_face3_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face3_5.png">
+      <Name>Lomuk_Walk_Large_face3_5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face3_6.png">
+      <Name>Lomuk_Walk_Large_face3_6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="palette20\Lomuk_Walk_Large_face3_7.png">
+      <Name>Lomuk_Walk_Large_face3_7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>
