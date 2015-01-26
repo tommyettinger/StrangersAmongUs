@@ -13,29 +13,22 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin Sfyst_[40]_NE.tvx
-/copy:Sfyst_[40]_NE.tvx
+#begin Zodiac.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:TextureFormat=Compressed
+/build:Zodiac.spritefont
 
-#begin Sfyst_[40]_NW.tvx
-/copy:Sfyst_[40]_NW.tvx
-
-#begin Sfyst_[40]_SE.tvx
-/copy:Sfyst_[40]_SE.tvx
-
-#begin Sfyst_[40]_SW.tvx
-/copy:Sfyst_[40]_SW.tvx
-
-#begin Terrain_[48]_NE.tvx
-/copy:Terrain_[48]_NE.tvx
-
-#begin Terrain_[48]_NW.tvx
-/copy:Terrain_[48]_NW.tvx
-
-#begin Terrain_[48]_SE.tvx
-/copy:Terrain_[48]_SE.tvx
-
-#begin Terrain_[48]_SW.tvx
-/copy:Terrain_[48]_SW.tvx
+#begin voxels.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=False
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:TextureFormat=Color
+/build:voxels.png
 
 #begin Glarosp_[40]_NE.tvx
 /copy:Glarosp_[40]_NE.tvx
@@ -85,6 +78,18 @@
 #begin Lomuk_[40]_SW.tvx
 /copy:Lomuk_[40]_SW.tvx
 
+#begin Sfyst_[40]_NE.tvx
+/copy:Sfyst_[40]_NE.tvx
+
+#begin Sfyst_[40]_NW.tvx
+/copy:Sfyst_[40]_NW.tvx
+
+#begin Sfyst_[40]_SE.tvx
+/copy:Sfyst_[40]_SE.tvx
+
+#begin Sfyst_[40]_SW.tvx
+/copy:Sfyst_[40]_SW.tvx
+
 #begin Tassar_[40]_NE.tvx
 /copy:Tassar_[40]_NE.tvx
 
@@ -97,20 +102,15 @@
 #begin Tassar_[40]_SW.tvx
 /copy:Tassar_[40]_SW.tvx
 
-#begin Zodiac.spritefont
-/importer:FontDescriptionImporter
-/processor:FontDescriptionProcessor
-/processorParam:TextureFormat=Compressed
-/build:Zodiac.spritefont
+#begin Terrain_[48]_NE.tvx
+/copy:Terrain_[48]_NE.tvx
 
-#begin voxels.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=False
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:TextureFormat=Color
-/build:voxels.png
+#begin Terrain_[48]_NW.tvx
+/copy:Terrain_[48]_NW.tvx
+
+#begin Terrain_[48]_SE.tvx
+/copy:Terrain_[48]_SE.tvx
+
+#begin Terrain_[48]_SW.tvx
+/copy:Terrain_[48]_SW.tvx
 
